@@ -1,76 +1,248 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    color: darkblue;
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
 }
 
-.container {
-  width:700px ;
-  margin: auto;
-  background-color: whitesmoke;
-  border: 1px solid darkblue;
-  padding: 0 30px;
-}
-.heading {
-    font-variant: small-caps;
-    text-align: center;
-    color: coral;
-}
-
-h2{
-    font-weight: normal;
-    font-size: 16px;
-}
-
-.brand{
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    font-weight: bold;
-}
-
-.description {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 12px;
-}
-
-hr {
-    height: 3px;
-    background-color: gainsboro;
-    border: none;
-}
-
-.intro {
-  font-size: 1.2rem;
-  margin-top: 20px;
-}
-
-.emoji {
-  margin: 0 5px;
-}
-
-.highlight {
-  color: #001f7f;
-  letter-spacing: 2px;
-}
-
-.subtext {
-  font-family: monospace;
-  margin-top: 10px;
-}
-
-.info {
-  font-size: 1.1rem;
-  margin-top: 20px;
-}
-
-.btn {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background-color: coral;
-  border: none;
+.calendar-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
   border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+  background-color: #4caf50;
   color: white;
-  letter-spacing: 4px;
-  margin-bottom: 30px;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 8px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #45a049;
+}
+
+td {
+  width: 14.28%;
+  height: 80px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+  padding: 5px;
+  position: relative;
+}
+
+.date-number {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.khmer-date {
+  font-size: 11px;
+  color: #030101;
+}
+
+.prev-month {
+  color: #ccc;
+}
+
+.next-month {
+  color: #ccc;
+}
+.khmer-date-color {
+  color: #cccccc;
+  font-size: 11px;
+}
+.next-month-color {
+  background-color: green;
+  color: #cccccc39;
+}
+
+.sunday {
+  color: #000000;
+  background-color: green;
+}
+
+.holiday {
+  color: #ff0000;
+}
+.holiday-khmer-date {
+  color: red;
+  font-size: 11px;
+}
+.Note {
+  color: blue;
+}
+.Note-khmer-date {
+  color: blue;
+  font-size: 11px;
+}
+
+.special-day {
+  background-color: #4caf50;
+  color: rgb(0, 0, 0);
+}
+
+.special-day .date-number,
+.special-day .khmer-date {
+  color: rgb(0, 0, 0);
+}
+
+.buddha-day::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 12px;
+}
+
+.pchum-ben::before {
+  content: "🏛";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 12px;
+}
+.prev-month-color {
+  background-color: #45a049;
+  color: #cccccc39;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+}
+
+.calendar-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 8px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #45a049;
+}
+
+td {
+  width: 14.28%;
+  height: 80px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+  padding: 5px;
+  position: relative;
+}
+
+.date-number {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.khmer-date {
+  font-size: 11px;
+  color: #030101;
+}
+
+.prev-month {
+  color: #ccc;
+}
+
+.next-month {
+  color: #ccc;
+}
+.khmer-date-color {
+  color: #cccccc;
+  font-size: 11px;
+}
+.next-month-color {
+  background-color: green;
+  color: #cccccc39;
+}
+
+.sunday {
+  color: #000000;
+  background-color: green;
+}
+
+.holiday {
+  color: #ff0000;
+}
+.holiday-khmer-date {
+  color: red;
+  font-size: 11px;
+}
+.Note {
+  color: blue;
+}
+.Note-khmer-date {
+  color: blue;
+  font-size: 11px;
+}
+
+.special-day {
+  background-color: #4caf50;
+  color: rgb(0, 0, 0);
+}
+
+.special-day .date-number,
+.special-day .khmer-date {
+  color: rgb(0, 0, 0);
+}
+
+.buddha-day::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 12px;
+}
+
+.pchum-ben::before {
+  content: "🏛";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 12px;
+}
+.prev-month-color {
+  background-color: #45a049;
+  color: #cccccc39;
 }
